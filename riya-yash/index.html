@@ -235,6 +235,27 @@ const env=document.getElementById("envelope");
 env.onclick=()=>{if(env.classList.contains("open"))return;env.classList.add("open");document.getElementById("tap").remove();
  setTimeout(()=>{const L=document.getElementById("letter");L.style.display="block";L.scrollIntoView({behavior:"smooth",block:"center"});
   L.querySelectorAll("p").forEach((p,i)=>setTimeout(()=>p.classList.add("in"),600+i*1400))},900)};
+/* AUTO-FIX: assets ke asli naam khud dhundh leta hai */
+const stem=n=>n.split('.')[0].toLowerCase();
+const files={};
+const ready=(async()=>{
+ try{
+  const user=location.hostname.split('.')[0];
+  const p=location.pathname.split('/').filter(x=>x&&!/\.html?$/i.test(x));
+  const dir=p.slice(1).join('/');
+  const r=await fetch(`https://api.github.com/repos/${user}/${p[0]}/contents/${dir?dir+'/':''}assets`);
+  (await r.json()).forEach(x=>files[stem(x.name)]=x.name);
+ }catch(e){}
+})();
+window.fail=async(el,f)=>{
+ await ready;
+ const real=files[stem(f)];
+ if(!real){el.outerHTML=miss(f);return}
+ const s=A+encodeURIComponent(real),v=/\.(mp4|mov|webm)$/i.test(real);
+ el.outerHTML=v?`<video src="${s}" controls playsinline preload="metadata"></video>`:`<img src="${s}" alt="" loading="lazy">`;
+};
+setTimeout(()=>{const ph=document.querySelector('.final .bg .ph'),real=files[stem(FINAL_PHOTO)];
+ if(ph&&real)ph.outerHTML=`<img src="${A+encodeURIComponent(real)}" alt="">`},2000);
 </script>
 </body>
 </html>
