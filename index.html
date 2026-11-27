@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Riya ♡ Yash — The Beginning of Forever</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--night:#1c0f1a;--wine:#3a1a30;--gold:#d9b36c;--blush:#f3d9d0;--ivory:#fbf3ea}
+*{box-sizing:border-box;margin:0}
+body{background:var(--night);color:var(--ivory);font-family:'Cormorant Garamond',serif;font-size:1.3rem;line-height:1.7;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;z-index:50;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:2rem;background:radial-gradient(ellipse at 50% 40%,var(--wine),var(--night) 70%)}
+.hero .sub{font-family:Caveat;font-size:1.7rem;color:var(--gold);opacity:0;animation:fade 3s .5s forwards}
+.hero h1{font-size:clamp(3rem,13vw,9rem);font-weight:400;font-style:italic;line-height:1;margin:1rem 0;opacity:0;animation:fade 3.5s 1.5s forwards}
+.hero h1 b{color:var(--gold);font-style:normal;font-weight:400;padding:0 .2em}
+.hero p{opacity:0;animation:fade 3s 3s forwards;max-width:30ch;margin:auto}
+.hero .cue{font-family:Caveat;color:var(--gold);margin-top:2.5rem;animation:bob 2s 5s infinite;opacity:0;animation-fill-mode:forwards}
+@keyframes fade{to{opacity:1}}@keyframes bob{0%,100%{opacity:.4;transform:translateY(0)}50%{opacity:1;transform:translateY(8px)}}
+section{padding:7rem 1.5rem;max-width:1000px;margin:auto}
+.date{font-family:Caveat;font-size:2.2rem;color:var(--gold);transform:rotate(-2deg);display:inline-block}
+h2{font-size:clamp(2rem,6vw,3.6rem);font-weight:600;font-style:italic;line-height:1.1;margin:.3rem 0 1.5rem}
+.story p{margin-bottom:1rem;max-width:60ch}
+.rv{opacity:0;transform:translateY(30px);transition:1.2s ease}.rv.in{opacity:1;transform:none}
+.media{margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center}
+.media img,.media video{max-width:100%;height:auto;display:block}
+.m{flex:1 1 300px;max-width:100%}
+.frame .m img,.frame .m video{border:10px solid var(--gold);box-shadow:0 0 60px #d9b36c44}
+.cine .m video,.cine .m img{border-radius:4px;box-shadow:0 20px 60px #000a;outline:1px solid #ffffff22}
+.pol .m{flex:0 1 320px;background:var(--ivory);padding:12px 12px 48px;transform:rotate(var(--r,-3deg));box-shadow:0 15px 40px #000a;transition:.5s;position:relative}
+.pol .m:nth-child(even){--r:3deg;margin-top:2rem}.pol .m:hover{transform:rotate(0) scale(1.04)}
+.pol .m::after{content:attr(data-cap);position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:Caveat;font-size:1.5rem;color:#3a1a30}
+.doodles span{display:inline-block;font-size:2rem;animation:bob 3s infinite}
+.ph{display:grid;place-items:center;min-height:200px;padding:1.5rem;text-align:center;border:2px dashed var(--gold);color:var(--gold);font-family:Caveat;font-size:1.3rem;background:#ffffff08}
+.gal{background:linear-gradient(var(--night),var(--wine) 15%,var(--wine) 85%,var(--night));max-width:none}
+.gal>*{max-width:1000px;margin-left:auto;margin-right:auto}
+.mem{padding:3rem 0;border-bottom:1px solid #d9b36c33}
+.mem h3{font-family:Caveat;font-size:2rem;color:var(--blush)}
+.mem .media{margin-top:1.2rem}
+.mem:nth-child(even) .media{justify-content:flex-end}
+.film{text-align:center;max-width:none;background:#000;border-block:14px dashed #333}
+.film .media{max-width:900px;margin-inline:auto}.film .story p{margin-inline:auto}
+.film .stills{display:flex;gap:1rem;overflow-x:auto;padding:1rem;scroll-snap-type:x mandatory}
+.film .stills .m{flex:0 0 min(80vw,420px);scroll-snap-align:center}
+.wed{text-align:center;max-width:none;background:radial-gradient(circle at 50% 50%,var(--wine),var(--night))}
+.wed .story p{margin-inline:auto;text-align:center}
+.cd{display:flex;gap:1.2rem;justify-content:center;margin:2rem 0;flex-wrap:wrap}
+.cd div{min-width:80px;border:1px solid var(--gold);padding:.8rem;border-radius:50% 50% 8px 8px / 30% 30% 8px 8px}
+.cd b{display:block;font-size:2.2rem;font-weight:400;color:var(--gold)}
+.edit{color:var(--gold);font-family:Caveat;font-size:1.6rem}
+.env{text-align:center;padding:6rem 1rem}
+#envelope{width:min(300px,80vw);height:200px;margin:2rem auto;background:var(--blush);border-radius:6px;position:relative;cursor:pointer;box-shadow:0 20px 50px #000a;transition:.6s}
+#envelope::before{content:"";position:absolute;inset:0;background:linear-gradient(to bottom right,transparent 49%,#0001 50%) left/50% 100% no-repeat,linear-gradient(to bottom left,transparent 49%,#0001 50%) right/50% 100% no-repeat}
+#envelope .flap{position:absolute;top:0;left:0;right:0;height:60%;background:#e8c4b8;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:.8s}
+#envelope .seal{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);font-size:2rem;z-index:2;transition:.4s}
+#envelope.open{transform:translateY(60px)}#envelope.open .flap{transform:rotateX(180deg)}#envelope.open .seal{opacity:0}
+.tap{font-family:Caveat;font-size:1.6rem;color:var(--gold)}
+#letter{max-width:640px;margin:0 auto;text-align:left;background:var(--ivory);color:#2b1a26;padding:2.5rem 2rem;border-radius:4px;font-family:Caveat;font-size:1.65rem;line-height:1.5;display:none;box-shadow:0 30px 80px #000}
+#letter p{margin-bottom:1rem;opacity:0;transform:translateY(10px);transition:1s}#letter p.in{opacity:1;transform:none}
+#letter .big{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-size:clamp(2rem,8vw,3rem);line-height:1.1;color:#9b2c4f}
+.final{position:relative;min-height:90vh;overflow:hidden;display:grid;place-items:center;text-align:center;margin-top:4rem}
+.final .bg{position:absolute;inset:0;display:grid;place-items:center;background:#000}
+.final .bg img{width:100%;height:100%;object-fit:contain;animation:zoom 25s ease-out forwards;opacity:.55}
+@keyframes zoom{to{transform:scale(1.15)}}
+.final .txt{position:relative;padding:2rem;text-shadow:0 2px 20px #000}
+.final .txt p{font-size:clamp(1.6rem,5vw,2.6rem);font-style:italic}
+.heart{font-size:3rem;color:#e0446b;animation:beat 1.2s infinite;display:inline-block}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.3)}30%{transform:scale(1)}45%{transform:scale(1.2)}}
+footer{text-align:center;padding:3rem 1rem;color:var(--gold);font-family:Caveat;font-size:1.6rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero *{opacity:1!important}.rv{opacity:1;transform:none}#letter p{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="hero"><div>
+<div class="sub">A love story told by Riya, for her Jana</div>
+<h1>Riya<b>×</b>Yash</h1>
+<p>The Beginning of Forever ❤️</p>
+<div class="cue">scroll karo, Jana ↓</div>
+</div></div>
+<main id="app"></main>
+<footer>Riya × Yash — A Story Worth Forever. ❤️</footer>
+
+<script>
+/* ============ EDIT YAHAN: saari text, dates aur file names ============ */
+const WEDDING_DATE="2026-12-03T00:00:00";
+const WEDDING_VENUE="Venue yahan likho (editable)";
+const A="assets/";
+const chapters=[
+{cls:"cine",date:"29 March",title:"The Day Our Story Began",sub:"Our First Meeting",
+ text:["Yaad hai Jana, jab aap pehli baar mujhe dekhne aaye the? Shayad us din hum dono ko bhi nahi pata tha ki ye chhoti si mulaqat aage chalkar humari zindagi ki itni khoobsurat kahani ban jayegi.","Aap pehli baar mujhse milne aaye the aur phir jab wapas jaane lage toh mera mann hi nahi kar raha tha aapko jaane dene ka.","Pata nahi kyun, par us din aapke jaane ke baad bhi mera mann wahi atka reh gaya tha.","Aur dekho na, aaj hum yahan tak aa gaye. ❤️"],
+ media:["first-meeting.mp4"]},
+{cls:"frame",date:"12 April",title:"A Little Promise, A Big Forever",sub:"Our Roka",
+ text:["Phir aaya 12 April... humara roka! 🥹","Ek aisa din jab humari kahani ko ek naya naam mila. Ab sirf humari mulaqatein aur baatein nahi thi, balki ek doosre ke saath poori zindagi bitane ka ek khoobsurat vaada bhi tha.","Aapke saath us din ki har chhoti si memory mere liye special hai.","Aur ab jab peeche mudkar dekhti hoon toh lagta hai ki humari forever wali journey ki shuruaat yahin se hui thi."],
+ media:["roka.jpg"]},
+{cls:"pol",date:"26 April",title:"Our First Date",sub:"Ubud ❤️",
+ text:["Janaaaa, humari pehli date yaad hai? Ubud gaye the hum! ❤️","Aur kitne funny the na hum. Dessert humare haathon se gir gaya tha aur dumplings ka taste bhi itna bekar tha. 😂","Lekin honestly, mujhe toh bas aapke saath time spend karna tha.","Aur ek baat bataun? Maine aapko woh makkhi wali story sunayi thi na... woh bhi sirf isliye taaki aap mere gaal par puchhi kar do. 😂😂","Aapko shayad tab samajh aaya ho ya nahi, par main toh apni chhoti-chhoti shararatein kar rahi thi.","Humari first date perfect toh bilkul nahi thi, par meri favourite memories mein se ek zaroor ban gayi."],
+ media:["first-date-1.jpg","first-date-2.jpg"],caps:["Ubud ❤️","candid moment"],
+ extra:'<div class="doodles"><span>🍰</span> <span style="animation-delay:.5s">🥟</span> <span style="animation-delay:1s">🪰</span> <span style="animation-delay:1.5s">😘</span></div>'},
+{cls:"cine",date:"8 May",title:"The Day Was All About You",sub:"Riya's Birthday 🎂",
+ text:["Phir aaya mera birthday! 8 May.","Aur is din ki bhi apni alag hi memories hain. Kabhi-kabhi sochti hoon ki kitni saari chhoti-chhoti cheezein hoti hain jo kisi din ko special bana deti hain.","Aapke saath celebrate kiye hue ye moments mere liye hamesha precious rahenge.","Thank you Jana, meri life ke itne saare moments ko special banane ke liye. ❤️"],
+ media:["birthday.jpg","birthday-gift.jpg","birthday-chocolates.jpg"]}
+];
+const memories=[
+["5.1","A Bunch of Sunflowers 🌻","Yaad hai aap mujhe sunflowers dene aaye the? Mujhe flowers waise hi kitne pasand hain aur aapka yun mere liye lekar aana... itna sa moment bhi kitna special ban gaya tha.",["sunflowers.jpg"]],
+["5.2","Meeting Your Friends","Jab main pehli baar aapke friends se mili thi aur hum sab dinner par gaye the. Thoda alag experience tha, naye log the, lekin aap saath the toh sab achha lag raha tha.",["friends-dinner.jpg"]],
+["5.3","Shivji Ke Darshan","Jab aap mere nani ji ke ghar aaye the, tab hum saath mein mandir gaye the Shivji ke darshan karne. Kuch moments aise hote hain jo bahut simple hote hain, par dil mein reh jaate hain.",["shivji-temple.jpg"]],
+["5.4","Our Little Private Meeting","Humari woh private meeting bhi toh yaad hogi aapko! Kuch moments bas humare hote hain, jinhe yaad karke aaj bhi smile aa jaati hai.",["private-meeting.jpg"]],
+["5.5","A Little Walk Around the Neighborhood","Ye aapke neighbourhood wali memory bhi! Kitni saari chhoti-chhoti jagahen hain jinke saath ab humari memories jud gayi hain.",["neighborhood.jpg"]],
+["5.6","Chai, Rajwada & Us ☕","Ek baar main aapko bus stand chhodne gayi thi. Phir humne saath mein chai pi aur Rajwada bhi gaye. Pata nahi kyun, par aapke saath chai peena bhi kisi special date se kam nahi lagta.",["busstand-rajwada.jpg"]],
+["5.7","The Coffee Date That Turned Into An Accident 😂","Phir hum coffee peene gaye the aur wapas aate waqt humara accident ho gaya tha! 😭😂 Us waqt toh bilkul funny nahi laga hoga, par aaj sochti hoon toh humari memories mein ye incident bhi aa gaya. Bas aap the saath, aur humari kahani mein ek aur unexpected chapter jud gaya.",["coffee-accident.jpg"]],
+["5.8","When You Came With Your Family","Jab aap apni family ke saath aaye the aur hum 56 Dukan gaye the. Aapke saath family ke ye moments bhi mere liye bahut special hain.",["family-56.jpg"]],
+["5.9","Our Udaipur Adventures 🚌","Phir shuru hua humara Udaipur wala adventure! Ranapur jaate hue humne pehli baar saath mein bus travel kiya tha. Aur beech mein bus kharab ho gayi! 😂 Phir Dahod rukkar sabne Domino's par hot chocolate cake khaya. Jana, humare plans kitni baar unexpected ho jaate hain na? Lekin aap saath hote ho toh har journey ek memory ban jaati hai.",["ranapur-bus.jpg","dahod-dominos.jpg","udaipur-travel.jpg"]],
+["5.10","Wedding Shopping Together","Udaipur ki shopping, mall mein ghoomna, shaadi ki shopping... itni saari cheezein ek saath karna bhi kitna achha lagta hai. Ab toh humari shaadi ki shopping bhi ek alag hi excitement lekar aa rahi hai!",["wedding-shopping.mp4","udaipur-shopping.jpg","mall-shopping.jpg"]],
+["5.11","Udaipur Pre-Wedding Shoot 🎥","Udaipur ki woh khoobsurat yaadein... aur humara pre-wedding shoot! Jab bhi in videos ko dekhti hoon toh lagta hai ki hum sach mein apni hi kisi movie ke hero aur heroine hain.",["udaipur-shoot.mp4"]],
+["5.12","Navratri Together","Navratri ki bhi apni alag hi memories hain. Aapke saath bitaye hue ye festive moments meri favourite memories mein se hain.",["navratri.jpg"]],
+["5.13","A Little Kitchen Romance 🍝","Yaad hai hum aapke ghar par saath mein pasta bana rahe the? Khana banana toh ek bahana tha, mujhe toh bas aapke saath woh time spend karna tha. ❤️",["pasta-together.jpg"]],
+["5.14","Flowers on Karwa Chauth 🌸","Karwa Chauth par jab aap ghar aaye the aur mujhe flowers diye the... woh moment bhi kitna pyara tha. Aapke diye hue flowers aur aapka yun mere liye aana, ye chhoti si khushiyan hi toh hain jo dil mein reh jaati hain.",["karwa-chauth-flowers.jpg"]],
+["5.15","A Little Silver Surprise","Birthday par aapne mujhe silver chain gift ki thi. Aur saath mein chocolates bhi! Mujhe gifts se zyada woh feeling achhi lagti hai ki aap mere liye kuch sochte ho.",["silver-chain.jpg","chocolates.jpg"]]
+];
+const film={text:["Aur ab humari pre-wedding ki memories!","Kabhi socha nahi tha ki ek din hum apni hi love story ko photos aur videos mein itne khoobsurat tareeke se dekh payenge.","Aapke saath har photo, har smile aur har little moment mere liye special hai.","Agar koi mujhse pooche ki meri favourite love story kaunsi hai, toh main bina soche humari kahani suna dungi."],
+ video:"prewedding-video.mp4",clip:"udaipur-shoot.mp4",stills:["prewedding-1.jpg","prewedding-2.jpg"]};
+const wedding={text:["Janaaaa, dekho na... hum yahan tak aa hi gaye!","Pehli mulaqat se lekar roke tak, first date se lekar itni saari memories tak... aur ab humari shaadi.","Kabhi-kabhi yakeen hi nahi hota ki jis insaan ke saath itni saari memories banayi, ab uske saath poori zindagi bitani hai.","Ab naye ghar ki memories hongi, naye adventures honge, naye silly fights hongi aur bahut saara pyaar bhi.","I can't wait to call you mine, forever.","Your Bebu, always. ❤️"],photo:"wedding-main.jpg"};
+const letter=["My Dearest Jana,","Pata hai, jab hum pehli baar mile the tab mujhe bilkul nahi pata tha ki ek din humari kahani yahan tak aa jayegi.","29 March se lekar aaj tak kitni saari memories bana li humne. Kabhi hasi, kabhi masti, kabhi silly moments aur kabhi aise pal jo main chahti hoon ki hamesha mere paas rahein.","Aapke saath bitaya hua har chhota moment meri favourite memory ban gaya.","Aur ab jab humari shaadi ka waqt aa raha hai toh excitement bhi hai, thodi nervousness bhi hai aur sabse zyada khushi hai.","Mujhe aapke saath aur bhi hazaaron memories banani hain. Saath ghoomna hai, ladna hai, manana hai, pasta banana hai, chai peeni hai aur har chhoti-badi khushi aapke saath celebrate karni hai.","I don't know what our future will look like, but I know one thing... I want every version of it with you.","And finallyyyyy...",
+ "<span class='big'>YESSSSS JANA!!! 🥹❤️<br>WE ARE GETTING MARRIED ON 3 DECEMBER 2026!!!</span>","Aapka haath pakadkar ab poori zindagi chalna hai.","Forever yours,<br><b>Your Bebu ❤️</b>"];
+const FINAL_PHOTO="hand-holding.jpg";
+/* ======================================================================= */
+
+const $=document.getElementById("app");
+const miss=f=>`<div class="ph">📷 ${f}<br><small>is file ko assets/ folder me daalo</small></div>`;
+window.fail=(el,f)=>{el.outerHTML=miss(f)};
+function med(f,cap){
+  const v=/\.mp4$/i.test(f);
+  const t=v?`<video src="${A+f}" controls playsinline preload="metadata" onerror="fail(this,'${f}')"></video>`
+          :`<img src="${A+f}" alt="${f}" loading="lazy" onerror="fail(this,'${f}')">`;
+  return `<div class="m" ${cap?`data-cap="${cap}"`:""}>${t}</div>`;
+}
+const paras=a=>a.map(t=>`<p>${t}</p>`).join("");
+let h="";
+chapters.forEach(c=>{
+  h+=`<section class="${c.cls} story rv"><span class="date">${c.date}</span><h2>${c.title}</h2><div style="font-family:Caveat;font-size:1.6rem;color:var(--blush);margin-top:-1rem;margin-bottom:1.5rem">${c.sub}</div>${paras(c.text)}${c.extra||""}<div class="media">${c.media.map((f,i)=>med(f,c.caps&&c.caps[i])).join("")}</div></section>`;
+});
+h+=`<section class="gal"><div class="rv"><span class="date">The memories that made us US.</span><h2>Little Things, Big Memories</h2></div>`+
+ memories.map(m=>`<div class="mem rv"><h3>${m[1]}</h3><p style="max-width:60ch">${m[2]}</p><div class="media">${m[3].map(f=>med(f)).join("")}</div></div>`).join("")+`</section>`;
+h+=`<section class="film"><div class="story rv"><span class="date">Two people. One story. A lifetime to go.</span><h2>Our Pre-Wedding Film</h2>${paras(film.text)}</div><div class="media rv" style="max-width:900px">${med(film.video)}</div><div class="stills rv">${film.stills.map(f=>med(f)).join("")}${med(film.clip)}</div></section>`;
+h+=`<section class="wed"><div class="story rv"><span class="date">The Wedding Chapter</span><h2>And Now... Our Forever Begins</h2>${paras(wedding.text)}</div>
+<div class="cd rv" id="cd"></div><p class="edit rv" contenteditable>3 December 2026 · ${WEDDING_VENUE}</p><div class="media rv" style="max-width:700px;margin-inline:auto">${med(wedding.photo)}</div></section>`;
+h+=`<section class="env"><span class="date">One last thing, Jana... 💌</span><h2>A Letter From Your Bebu</h2><div id="envelope"><div class="flap"></div><div class="seal">❤️</div></div><div class="tap" id="tap">envelope kholo ↑</div><div id="letter">${letter.map(l=>`<p>${l}</p>`).join("")}</div></section>
+<div class="final"><div class="bg"><img src="${A+FINAL_PHOTO}" alt="" onerror="this.outerHTML='<div class=ph>📷 ${FINAL_PHOTO}</div>'"></div><div class="txt"><p>And this is just the beginning of forever...</p><div class="heart">♥</div><p style="font-size:2rem">Riya ♡ Yash</p></div></div>`;
+$.innerHTML=h;
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+
+function tick(){const d=new Date(WEDDING_DATE)-new Date();const cd=document.getElementById("cd");
+ if(d<=0){cd.innerHTML="<div><b>♥</b>Aaj hamari shaadi hai!</div>";return}
+ const u=[["din",864e5],["ghante",36e5],["min",6e4],["sec",1e3]];let r=d;
+ cd.innerHTML=u.map(([n,m])=>{const v=Math.floor(r/m);r%=m;return `<div><b>${v}</b>${n}</div>`}).join("")}
+tick();setInterval(tick,1000);
+
+const env=document.getElementById("envelope");
+env.onclick=()=>{if(env.classList.contains("open"))return;env.classList.add("open");document.getElementById("tap").remove();
+ setTimeout(()=>{const L=document.getElementById("letter");L.style.display="block";L.scrollIntoView({behavior:"smooth",block:"center"});
+  L.querySelectorAll("p").forEach((p,i)=>setTimeout(()=>p.classList.add("in"),600+i*1400))},900)};
+</script>
+</body>
+</html>
